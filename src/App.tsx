@@ -6,11 +6,15 @@ const apiUrl = "https://stagingapi.helpmewaka.com/healthcare";
 function App() {
   // Handler
   const getData = async () => {
-    const response = await fetch(apiUrl, {
-      method: "GET",
-    });
-    const movies = await response.json();
-    console.log({ movies });
+    try {
+      const response = await fetch(apiUrl, {
+        method: "GET",
+      });
+      const movies = await response.json();
+      console.log({ movies });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   // Effects
