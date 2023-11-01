@@ -138,3 +138,16 @@ tr:nth-child(even) {
   border-right: 1px solid;
   border-bottom: 1px var(--color-primary);
 }
+
+.empty-state {
+  display: grid;
+  place-items: center;
+  height: 30rem;
+  background-color: #d3d3d341;
+  border-radius: 1rem;
+}
+
+.empty-heading {
+  font-size: 1.7rem;
+  color: #818181;
+}
