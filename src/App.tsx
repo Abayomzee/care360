@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-// const apiUrl = "https://stagingapi.helpmewaka.com/healthcare";
-const apiUrl = "https://api.helpmewaka.com/healthcare";
+const apiUrl = "https://stagingapi.helpmewaka.com/healthcare";
+// const apiUrl = "https://api.helpmewaka.com/healthcare";
 
 function App() {
   // Handler
