@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./App.css";
 
-const apiUrl = "https://stagingapi.helpmewaka.com/healthcare";
+// const apiUrl = "https://stagingapi.helpmewaka.com/healthcare";
+const apiUrl = "https://api.helpmewaka.com/healthcare";
 
 function App() {
   // Handler
@@ -9,6 +10,10 @@ function App() {
     try {
       const response = await fetch(apiUrl, {
         method: "GET",
+        headers: {
+          "access-control-allow-origin": "*",
+          "Content-type": "application/json; charset=UTF-8",
+        },
       });
       const movies = await response.json();
       console.log({ movies });
