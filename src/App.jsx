@@ -11,13 +11,7 @@ function App() {
   // Handler
   const getData = async () => {
     try {
-      const response = await fetch(apiUrl, {
-        method: "GET",
-        headers: {
-          "access-control-allow-origin": "*",
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      });
+      const response = await fetch(apiUrl);
       const res = await response.json();
       setData(res.data);
       console.log({ data: res.data });
