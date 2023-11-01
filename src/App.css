@@ -151,3 +151,9 @@ tr:nth-child(even) {
   font-size: 1.7rem;
   color: #818181;
 }
+
+td, th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

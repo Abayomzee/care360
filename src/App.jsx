@@ -75,20 +75,20 @@ function App() {
               {/* Data */}
               {data.map((d, index) => (
                 <tr key={index}>
-                  <td>--</td>
+                  <td className="text-center">--</td>
 
-                  <td>{d?.RequesterName}</td>
-                  <td>{d?.RequesterPhone}</td>
-                  <td>{d?.RequesterEmail}</td>
+                  <td title={d?.RequesterName}>{d?.RequesterName}</td>
+                  <td title={d?.RequesterPhone}>{d?.RequesterPhone}</td>
+                  <td title={d?.RequesterEmail}>{d?.RequesterEmail}</td>
 
-                  <td>{d?.BeneficiaryName}</td>
-                  <td>{d?.BeneficiaryPhone}</td>
-                  <td>{d?.BeneficiaryEmail}</td>
-                  <td>{d?.BeneficiaryDOB}</td>
-                  <td>{d?.BeneficiaryAddress}</td>
+                  <td title={d?.BeneficiaryName}>{d?.BeneficiaryName}</td>
+                  <td title={d?.BeneficiaryPhone}>{d?.BeneficiaryPhone}</td>
+                  <td title={d?.BeneficiaryEmail}>{d?.BeneficiaryEmail}</td>
+                  <td title={d?.BeneficiaryDOB}>{d?.BeneficiaryDOB}</td>
+                  <td title={d?.BeneficiaryAddress}>{d?.BeneficiaryAddress}</td>
 
-                  <td>--</td>
-                  <td>--</td>
+                  <td className="text-center">--</td>
+                  <td className="text-center">--</td>
                   {/* <td>22/10/2023</td>
                 <td>30/10/2023</td> */}
                 </tr>
